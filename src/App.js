@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 
+class App extends PureComponent {
+  constructor(props) {
+    super(props)
 
-function App() {
-  return (
-    <div>
-      <SignIn />
-      <SignUp />
- 
-    </div>
-  )
+    this.state = {
+        active:false,
+    }
+  }
+
+  render() {
+
+    const getRes = (value)=>{
+      console.log(value);
+      this.setState({active:value})
+      
+    }
+    return (
+      <div>
+         {
+        this.state.active?  <SignIn getRes={getRes} /> : <SignUp getRes={getRes} />
+      }
+     
+      </div>
+      
+    )
+  }
 }
 
 export default App

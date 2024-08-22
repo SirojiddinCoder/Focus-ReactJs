@@ -13,7 +13,7 @@ class SignUp extends PureComponent {
         return (
             <div>
                 <h1>SignIn</h1>
-                <button>SignUp</button>
+                <button onClick={()=>this.props.getRes(true)}>SignUp</button>
             </div>
         )
     }

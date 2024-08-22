@@ -12,8 +12,8 @@ class SignIn extends PureComponent {
     render() {
         return (
             <div>
-                <h1>SignUp</h1>\
-                <button>SignIn</button>
+                <h1>SignUp</h1>
+                <button onClick={()=>this.props.getRes(false)}>SignIn</button>
             </div>
             
         )
