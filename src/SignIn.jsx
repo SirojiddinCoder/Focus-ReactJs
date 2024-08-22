@@ -7,13 +7,31 @@ class SignIn extends PureComponent {
         this.state = {
             
         }
+              
+    console.log("Constructor");
     }
 
+    componentWillMount(){
+        console.log("componentWillMount");
+        
+    }
+    componentDidMount(){
+        console.log("componentDidMount");
+        
+    }
+    componentWillReceiveProps(){
+        console.log("componentWillReceiveProps");
+        
+    }
+
+    //bind   
     render() {
+              
+    console.log("render");
         return (
             <div>
-                <h1>SignUp</h1>
-                <button onClick={()=>this.props.getRes(false)}>SignIn</button>
+                <h1>React LifeCycle</h1>
+                
             </div>
             
         )
