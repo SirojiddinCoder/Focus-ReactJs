@@ -1,22 +1,17 @@
 import React, { PureComponent } from 'react'
-import SignIn from './SignIn'
+import Class1 from './Class'
+import { Hook } from './Hook'
+
 
 
 class App extends PureComponent {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-   
-    }
-  }
-
   render() {
 
     return (
-      <div>
-        <SignIn />
-    
+      <div style={{display:'flex', alignItems:'center', justifyContent:"space-around"}}>
+  
+  <Class1 />
+  <Hook />
       </div>
       
     )
