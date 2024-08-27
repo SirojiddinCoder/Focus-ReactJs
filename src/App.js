@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
-import Class1 from './Class'
-import { Hook } from './Hook'
+import { UseEfect1 } from './UseEfect1'
 
 
 
@@ -8,10 +7,9 @@ class App extends PureComponent {
   render() {
 
     return (
-      <div style={{display:'flex', alignItems:'center', justifyContent:"space-around"}}>
-  
-  <Class1 />
-  <Hook />
+      <div>
+        <UseEfect1 />
+ 
       </div>
       
     )
